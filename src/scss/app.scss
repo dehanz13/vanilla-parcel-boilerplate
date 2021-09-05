@@ -1,0 +1,84 @@
+@import "config";
+@import "utilities";
+@import "buttons";
+@import "card";
+
+// Add a reset / base styling
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $light-color;
+  font-family: $font-stack;
+  line-height: 1.6;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  border-bottom: 5px #fff solid;
+}
+
+.main-header {
+  @include set-background($primary-color);
+  height: 600px;
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    ul {
+      display: flex;
+      list-style: none;
+    }
+
+    li {
+      padding: 15px;
+    }
+
+    a {
+      color: set-text-color($primary-color);
+    }
+
+    a:hover {
+      color: $secondary-color;
+    }
+  }
+
+  .hero-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+
+    img {
+      width: 50%;
+    }
+
+    h1 {
+      font-size: 50px;
+      line-height: 1.2;
+    }
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+@import "mobile";

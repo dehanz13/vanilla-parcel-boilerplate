@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/app.js"],"names":["console","log"],"mappings":";;;AAEA,aAFA,QAAA,mBAEAA,QAAQC,IAAI","file":"app.57c50e28.js","sourceRoot":"../public","sourcesContent":["import \"./scss/app.scss\";\n\nconsole.log(\"Feel free to use this boilerplate!\");\n"]}

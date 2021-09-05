@@ -1,0 +1,25 @@
+// This file contains any variables, mixins, functions, etc.
+
+// Variables
+$light-color: #f4f4f4;
+$font-stack: Arial, Helvetica, sans-serif;
+$primary-color: #0e6cff;
+// $primary-color: #e0ffff;
+$secondary-color: #ff8700;
+
+// Set text color based on bg. lighteness is based on 1-100
+// Fuctions can be used anywhere.
+@function set-text-color($color) {
+  @if (lightness($color) > 70) {
+    @return #333;
+  } @else {
+    @return #fff;
+  }
+}
+
+// Set background and text color using mixins.
+// Note: Mixins don't return anything
+@mixin set-background($color) {
+  background-color: $color;
+  color: set-text-color($color);
+}
